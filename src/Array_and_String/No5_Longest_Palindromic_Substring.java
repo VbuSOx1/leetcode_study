@@ -57,5 +57,52 @@ public class No5_Longest_Palindromic_Substring {
     }
 
 
+    public String longestPalindrome2(String s) {
+        int begin = 0;
+        int max_length =  1;
+        int len = s.length();
+        if(len < 2){
+            return s;
+        }
+        // isPalindrome[i][j] 代表 从 i到j是回文
+        boolean[][] isPalindrome = new boolean[len][len];
+        for(int i = 0; i < len; i++){
+            isPalindrome[i][i] = true;
+        }
+        char[] sChars = s.toCharArray();
+        // 步长
+        for(int step = 2; step < len; step++){
+            for(int i = 0; i < len; i++){
+                int j = i + step - 1;
+                if( j >= len){
+                    break;
+                }
+                if(sChars[i] == sChars[j] && (step <= 3 || isPalindrome[i+1][j-1])){
+                    isPalindrome[i][j] = true;
+                    if(step > max_length){
+                        begin = i;
+                        max_length = step;
+                    }
+                }else {
+                    isPalindrome[i][j] = false;
+                }
+            }
+        }
+        return s.substring(begin, begin+max_length);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
