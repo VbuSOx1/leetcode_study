@@ -71,7 +71,7 @@ public class No5_Longest_Palindromic_Substring {
         }
         char[] sChars = s.toCharArray();
         // 步长
-        for(int step = 2; step <= len; step++){
+        for(int step = 2; step < len; step++){
             for(int i = 0; i < len; i++){
                 int j = i + step - 1;
                 if( j >= len){
