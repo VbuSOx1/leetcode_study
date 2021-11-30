@@ -1,6 +1,6 @@
 package elementary_algorithm.other;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author weib

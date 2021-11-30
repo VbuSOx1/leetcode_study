@@ -1,6 +1,6 @@
 package stack_and_queue;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author weib

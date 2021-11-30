@@ -1,6 +1,6 @@
 package recursion;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author weib

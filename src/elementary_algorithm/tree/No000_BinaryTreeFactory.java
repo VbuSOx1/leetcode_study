@@ -1,6 +1,6 @@
 package elementary_algorithm.tree;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.LinkedList;
