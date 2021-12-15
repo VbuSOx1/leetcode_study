@@ -9,5 +9,6 @@ public class Test {
     public void test(){
         String s = "123456789";
         System.out.println();
+
     }
 }
