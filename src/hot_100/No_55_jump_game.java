@@ -33,6 +33,6 @@ public class No_55_jump_game {
     }
 
     public static void main(String[] args) {
-        System.out.println(canJump(new int[]{1,0,1,0}));
+        System.out.println(No_55_jump_game.class.getClassLoader());
     }
 }
