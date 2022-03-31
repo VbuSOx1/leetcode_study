@@ -33,6 +33,6 @@ public class No_55_jump_game {
     }
 
     public static void main(String[] args) {
-        System.out.println(No_55_jump_game.class.getClassLoader());
+        System.out.println( No_55_jump_game.class.getClassLoader());
     }
 }
