@@ -19,5 +19,6 @@ public class Test {
         String ab = new String("a");
         System.out.println(" " + a.equals(ab) );
         System.out.println(" " + a == ab );
+
     }
 }
